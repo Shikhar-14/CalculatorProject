@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="C:\Users\HP\Desktop\College\Calculator\javascript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0" />
+        </div>
+
+        <div class="btns">
+            <div class="row">
+                <button id="ce" oneclick="backspc()">CE</button>
+                <button oneclick="fact()">x!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button id="ac" oneclick="screen.value"='' ">AC</button>
+            </div>
+
+            <div class="row ">
+                <button oneclick="sin() ">sin</button>
+                <button oneclick="pi() ">π</button>
+                <button class="btn ">7</button>
+                <button class="btn ">8</button>
+                <button class="btn ">9</button>
+                <button class="btn ">÷</button>
+            </div>
+
+            <div class="row ">
+                <button oneclick="cos() ">cos</button>
+                <button oneclick="log() ">log</button>
+                <button class="btn ">4</button>
+                <button class="btn ">5</button>
+                <button class="btn ">6</button>
+                <button class="btn ">×</button>
+            </div>
+
+            <div class="row ">
+                <button oneclick="tan() ">tan</button>
+                <button oneclick="sqrt() ">√</button>
+                <button class="btn ">1</button>
+                <button class="btn ">2</button>
+                <button class="btn ">3</button>
+                <button class="btn ">-</button>
+            </div>
+
+            <div class="row ">
+                <button oneclick="e() ">e</button>
+                <button oneclick="pow() ">
+                    x
+                    <span style="position:relative; bottom:0.4em; right:0.1em; ">
+                    y
+                    </span>
+                </button>
+                <button class="btn ">0</button>
+                <button class="btn ">.</button>
+                <button id="eval " oneclick="screen.value=eval(screen.value) ">=</button>
+                <button class="btn ">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
